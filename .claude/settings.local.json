@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\paulo\\\\projetos\\\\todos-por-eles\")",
+      "Bash(pnpm dev *)",
+      "Bash(curl -s http://localhost:3309)"
+    ]
+  }
+}

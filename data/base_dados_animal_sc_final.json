@@ -1,0 +1,1461 @@
+[
+  {
+    "nome_oficial": "Diretoria de Bem-Estar Animal de Florianópolis",
+    "nome_fantasia": "DIBEA Florianópolis",
+    "sigla": "DIBEA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Florianópolis",
+    "estado": "SC",
+    "site_url": "https://dibea.floripa.sc.gov.br/",
+    "whatsapp_principal": "(48) 98865-6638",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração",
+      "Atendimento Veterinário",
+      "Resgate"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Florianópolis"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Diretoria do Bem-Estar Animal de São José",
+    "nome_fantasia": "DIBEA São José",
+    "sigla": "DIBEA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "São José",
+    "estado": "SC",
+    "site_url": "https://saojose.sc.gov.br/diretoria-do-bem-estar-animal-dibea/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Fiscalização",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "São José"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Diretoria de Bem-Estar Animal de Biguaçu",
+    "sigla": "DIBEA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Biguaçu",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Resgate"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Biguaçu"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Centro de Bem-Estar Animal de Governador Celso Ramos",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Governador Celso Ramos",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Resgate",
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Governador Celso Ramos"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação dos Protetores de Animais de São José",
+    "sigla": "APA/SJ",
+    "cnpj": "42.368.809/0001-10",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "São José",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Resgate",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "São José"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Unidade de Bem-Estar e Proteção Animal de Joinville",
+    "sigla": "UBE",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Joinville",
+    "estado": "SC",
+    "telefone_principal": "(47) 3407-2149",
+    "site_url": "https://www.joinville.sc.gov.br/institucional/sama/ube/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Atendimento Veterinário",
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Joinville"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Centro de Bem-Estar Animal de São Francisco do Sul",
+    "sigla": "CBEA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "São Francisco do Sul",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Resgate",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "São Francisco do Sul"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Departamento de Assistência e Bem-Estar Animal de Itapema",
+    "nome_fantasia": "DABA Itapema",
+    "sigla": "DABA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Itapema",
+    "estado": "SC",
+    "whatsapp_principal": "(47) 98817-9617",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Atendimento Veterinário",
+      "Castração",
+      "Adoção",
+      "Resgate"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Itapema"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Secretaria de Proteção e Cuidado Animal de Navegantes",
+    "nome_fantasia": "SPCA Navegantes",
+    "sigla": "SPCA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Navegantes",
+    "estado": "SC",
+    "site_url": "https://navegantes.sc.gov.br/protecao-e-cuidado-animal/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Atendimento clínico",
+      "Castração",
+      "Recolhimento"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Navegantes"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Secretaria de Bem-Estar Animal de Balneário Piçarras",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Balneário Piçarras",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Fiscalização",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Balneário Piçarras"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Instituto do Meio Ambiente de Penha - Bem-Estar Animal",
+    "sigla": "IMAP",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Penha",
+    "estado": "SC",
+    "whatsapp_principal": "(47) 99106-3210",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Resgate",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Penha"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Penhense de Proteção aos Animais",
+    "sigla": "APPA",
+    "cnpj": "07.034.296/0001-00",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Penha",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Adoção",
+      "Proteção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Penha"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Gerência de Bem-Estar Animal de Blumenau",
+    "sigla": "GCEPREAD",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Blumenau",
+    "estado": "SC",
+    "telefone_principal": "(47) 9916-6343",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Blumenau"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Gerência de Bem-Estar Animal de Jaraguá do Sul",
+    "sigla": "Fujama",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Jaraguá do Sul",
+    "estado": "SC",
+    "site_url": "https://www.jaraguadosul.sc.gov.br/fujama/lar-temporario",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Fiscalização",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Jaraguá do Sul"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Diretoria de Bem-Estar Animal de Gaspar",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Gaspar",
+    "estado": "SC",
+    "telefone_principal": "(47) 3221-7395",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Gaspar"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Setor de Bem-Estar Animal de Pomerode",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Pomerode",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Fiscalização",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Pomerode"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Programa de Bem-Estar Animal de Indaial",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Indaial",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Indaial"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Conselho Municipal do Bem-Estar Animal de Timbó",
+    "natureza_juridica": "Conselho Municipal",
+    "esfera_governamental": "Municipal",
+    "cidade": "Timbó",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": false,
+    "realiza_adocao": false,
+    "realiza_castracao": false,
+    "servicos": [
+      "Políticas Públicas",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Timbó"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Núcleo de Atenção aos Pequenos Animais de Chapecó",
+    "sigla": "NAPA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Chapecó",
+    "estado": "SC",
+    "site_url": "https://www.chapeco.sc.gov.br/conteudo/484/napa",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Fiscalização",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Chapecó"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Assessoria de Proteção e Bem-Estar Animal de Concórdia",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Concórdia",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Concórdia"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Coordenadoria de Bem-Estar Animal de Caçador",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Caçador",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Caçador"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Setor de Bem-Estar Animal de Videira",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Videira",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Videira"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Núcleo de Bem-Estar Animal de Criciúma",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Criciúma",
+    "estado": "SC",
+    "site_url": "https://bemestaranimal.criciuma.sc.gov.br/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Criciúma"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Programa Bem-Estar Animal de Tubarão",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Tubarão",
+    "estado": "SC",
+    "site_url": "https://tubarao.sc.gov.br/bemestaranimal/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção",
+      "Fiscalização"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Tubarão"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Gerência de Bem-Estar Animal de Laguna",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Laguna",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Família Acolhedora",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Laguna"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Centro de Bem-Estar Animal de Imbituba",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Imbituba",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Resgate",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Imbituba"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Centro de Zoonoses e Bem-Estar Animal de Lages",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Municipal",
+    "cidade": "Lages",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Zoonoses",
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Lages"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Delegacia de Proteção Animal - Polícia Civil SC",
+    "sigla": "DPA",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Estadual",
+    "cidade": "Florianópolis",
+    "estado": "SC",
+    "site_url": "https://pc.sc.gov.br/?page_id=3623",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Estadual",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": false,
+    "realiza_castracao": false,
+    "servicos": [
+      "Investigação de maus-tratos",
+      "Registro de BO online"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Estado",
+        "nome_regiao": "Santa Catarina"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Diretoria de Bem-Estar Animal de Santa Catarina",
+    "sigla": "DIBEA SC",
+    "natureza_juridica": "Governamental",
+    "esfera_governamental": "Estadual",
+    "cidade": "Florianópolis",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Estadual",
+    "possui_abrigo": false,
+    "realiza_resgate": false,
+    "realiza_adocao": false,
+    "realiza_castracao": true,
+    "servicos": [
+      "Políticas Públicas",
+      "Programa Pet Levado a Sério"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Estado",
+        "nome_regiao": "Santa Catarina"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Blumenau",
+    "nome_fantasia": "APRABLU",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Blumenau",
+    "estado": "SC",
+    "site_url": "https://aprablu.com.br/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Blumenau"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Viva Bicho",
+    "nome_fantasia": "Viva Bicho",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Balneário Camboriú",
+    "estado": "SC",
+    "site_url": "https://vivabicho.org.br/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Resgate",
+      "Abrigo"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Balneário Camboriú"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Abrigo Animal Joinville",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Joinville",
+    "estado": "SC",
+    "site_url": "https://abrigoanimal.org.br/",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Abrigo",
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Joinville"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Lageana de Proteção aos Animais",
+    "sigla": "ALPA",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Lages",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Regional",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração",
+      "Educação"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Região",
+        "nome_regiao": "Serra Catarinense"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Brusquense de Proteção aos Animais",
+    "sigla": "ACAPRA",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Brusque",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Brusque"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Itapoá",
+    "sigla": "APA Itapoá",
+    "cnpj": "12.654.330/0001-80",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Itapoá",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Abrigo",
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Itapoá"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de São Bento do Sul",
+    "sigla": "APASBS",
+    "cnpj": "09.152.206/0001-01",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "São Bento do Sul",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Abrigo",
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "São Bento do Sul"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais e ao Meio Ambiente",
+    "cnpj": "60.334.528/0001-29",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Diversas",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Estadual",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Proteção",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Estado",
+        "nome_regiao": "Santa Catarina"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Benedito Novo",
+    "sigla": "APABEN",
+    "cnpj": "14.284.430/0001-97",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Benedito Novo",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Benedito Novo"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Jaraguaense de Proteção aos Animais",
+    "sigla": "AJAPRA",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Jaraguá do Sul",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Jaraguá do Sul"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Hachi ONG – Proteção Animal",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Blumenau",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Proteção",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Blumenau"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Riossulense de Bem-Estar Animal",
+    "sigla": "ARBA",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Rio do Sul",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Rio do Sul"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Amigo Bicho de Canoinhas",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Canoinhas",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Canoinhas"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais MiauJude",
+    "sigla": "MiauJude",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Diversas",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Regional",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Adoção",
+      "Resgate de Gatos"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Estado",
+        "nome_regiao": "Santa Catarina"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "ONG Bom pra Cachorro",
+    "cnpj": "30.190.269/0001-49",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Joaçaba",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Regional",
+    "possui_abrigo": true,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Abrigo",
+      "Resgate",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Joaçaba"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Voluntários voltados à Causa Animal de Xanxerê",
+    "sigla": "AMA",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Xanxerê",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Castração",
+      "Adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Xanxerê"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetores de Animais de Videira",
+    "sigla": "APANVI",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Videira",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Videira"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Proteção Unida São José",
+    "cnpj": "52.801.191/0001-94",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "São José",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Resgate voluntário",
+      "Intermediação de adoção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "São José"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Amigos dos Animais de Concórdia",
+    "sigla": "AMACO",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Concórdia",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Concórdia"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais de Tubarão",
+    "sigla": "APAT",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Tubarão",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Adoção",
+      "Proteção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Tubarão"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Imbituba",
+    "sigla": "APAI",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Imbituba",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Adoção",
+      "Proteção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Imbituba"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Laguna",
+    "sigla": "APAL",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Laguna",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": false,
+    "servicos": [
+      "Adoção",
+      "Proteção"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Laguna"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais de Garopaba",
+    "sigla": "APA Garopaba",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Garopaba",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Garopaba"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais de Barra Velha",
+    "sigla": "APA Barra Velha",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Barra Velha",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Barra Velha"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais de Balneário Piçarras",
+    "sigla": "APA Piçarras",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Balneário Piçarras",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Balneário Piçarras"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Mafra",
+    "sigla": "APA Mafra",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Mafra",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Mafra"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação de Proteção aos Animais de Porto Belo",
+    "sigla": "APA Porto Belo",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Porto Belo",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Porto Belo"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Bombinhas",
+    "sigla": "APA Bombinhas",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Bombinhas",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Bombinhas"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Balneário Camboriú",
+    "sigla": "APA BC",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Balneário Camboriú",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Balneário Camboriú"
+      }
+    ]
+  },
+  {
+    "nome_oficial": "Associação Protetora de Animais de Camboriú",
+    "sigla": "APA Camboriú",
+    "natureza_juridica": "ONG",
+    "esfera_governamental": "Não se aplica",
+    "cidade": "Camboriú",
+    "estado": "SC",
+    "status_atividade": "Ativa",
+    "escopo_territorial": "Municipal",
+    "possui_abrigo": false,
+    "realiza_resgate": true,
+    "realiza_adocao": true,
+    "realiza_castracao": true,
+    "servicos": [
+      "Adoção",
+      "Castração"
+    ],
+    "regioes_atuacao": [
+      {
+        "tipo_regiao": "Município",
+        "nome_regiao": "Camboriú"
+      }
+    ]
+  }
+]

@@ -1,0 +1,340 @@
+{
+  "brand": {
+    "name": "Todos Por Eles",
+    "tagline": "ONG de proteção animal em Santa Catarina",
+    "logo": "/logo.png",
+    "logoWidth": 180,
+    "logoHeight": 60
+  },
+  "nav": {
+    "items": [
+      { "label": "Início", "href": "#inicio" },
+      { "label": "Denúncia", "href": "#denuncia" },
+      { "label": "ONGs em SC", "href": "#ongs" },
+      { "label": "Transparência", "href": "#transparencia" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "ctaLabel": "Fazer denúncia",
+    "ctaHref": "#denuncia"
+  },
+  "hero": {
+    "badge": "Plataforma de Proteção Animal em Santa Catarina",
+    "headline": {
+      "part1": "Denuncie maus-tratos.",
+      "part2": "Encontre ONGs.",
+      "part3": "Proteja os animais."
+    },
+    "description": "Uma iniciativa da ONG Todos Por Eles que conecta cidadãos, ONGs e autoridades para fortalecer a proteção animal em Santa Catarina. Faça denúncias com triagem responsável e encontre organizações de proteção em todo o estado.",
+    "cta_denuncia": "Fazer denúncia",
+    "cta_busca": "Buscar ONGs em SC",
+    "cta_cadastro": "Cadastrar sua ONG",
+    "image": {
+      "src": "/todos-por-eles-animais-protegidos-hero-home.jpg",
+      "alt": "Cão resgatado em retrato editorial, olhando para a câmera com luz suave"
+    },
+    "statBadge": {
+      "value": "+12,4k",
+      "label": "Animais protegidos este ano através de denúncias triadas."
+    },
+    "trustPoints": [
+      { "title": "Triagem responsável", "description": "Análise criteriosa de cada denúncia", "icon": "Shield" },
+      { "title": "Diretório estadual de ONGs", "description": "Rede de proteção em todo o estado", "icon": "MapPin" },
+      { "title": "Sigilo e critérios claros", "description": "Proteção de dados e transparência", "icon": "Lock" }
+    ]
+  },
+  "pathways": {
+    "eyebrow": "Engajamento cívico",
+    "title": "Como você deseja contribuir hoje?",
+    "description": "A plataforma oferece três formas de contribuir para a proteção animal em Santa Catarina",
+    "items": [
+      {
+        "icon": "AlertTriangle",
+        "iconTone": "destructive",
+        "title": "Denunciar maus-tratos",
+        "description": "Relate casos de maus-tratos contra animais. Sua denúncia será analisada com critérios claros e encaminhada de forma responsável.",
+        "cta": "Iniciar denúncia",
+        "href": "#denuncia",
+        "note": "Denúncia anônima — não requer login"
+      },
+      {
+        "icon": "HeartHandshake",
+        "iconTone": "primary",
+        "title": "Apoiar uma ONG",
+        "description": "Consulte o diretório estadual de ONGs de proteção animal. Encontre organizações por cidade ou tipo de atuação.",
+        "cta": "Ver diretório",
+        "href": "#ongs",
+        "note": "Acesso livre e gratuito"
+      },
+      {
+        "icon": "ClipboardPlus",
+        "iconTone": "secondary",
+        "title": "Cadastrar sua ONG",
+        "description": "Registre sua organização no diretório estadual e amplie sua visibilidade para cidadãos e parceiros em todo o estado.",
+        "cta": "Formulário de cadastro",
+        "href": "#cadastrar",
+        "note": "Requer autenticação"
+      }
+    ]
+  },
+  "whatIsAbuse": {
+    "eyebrow": "Base legal e ética",
+    "title": "O que configura maus-tratos?",
+    "description": "Entender os sinais é o primeiro passo para a proteção. A legislação brasileira é rigorosa quanto à dignidade animal.",
+    "quote": "Maus-tratos não é apenas agressão física. Privação de luz, água ou espaço adequado também constitui crime ambiental.",
+    "items": [
+      {
+        "icon": "Ban",
+        "title": "Abandono",
+        "description": "Deixar o animal em situação de desamparo, sem cuidados básicos."
+      },
+      {
+        "icon": "Hand",
+        "title": "Agressão física",
+        "description": "Bater, chutar ou causar ferimentos intencionais ao animal."
+      },
+      {
+        "icon": "Droplets",
+        "title": "Privação de água e alimento",
+        "description": "Negar acesso a água limpa e alimentação adequada."
+      },
+      {
+        "icon": "Home",
+        "title": "Ambiente insalubre",
+        "description": "Manter o animal em condições inadequadas de higiene e espaço."
+      },
+      {
+        "icon": "Stethoscope",
+        "title": "Omissão de socorro",
+        "description": "Não providenciar atendimento veterinário quando necessário."
+      },
+      {
+        "icon": "Skull",
+        "title": "Envenenamento",
+        "description": "Oferecer substâncias tóxicas ou venenos ao animal."
+      }
+    ],
+    "disclaimer": {
+      "strong": "Importante:",
+      "text": "Maus-tratos contra animais é crime previsto na Lei Federal 9.605/98. Se presenciar uma situação de risco imediato, acione também a Polícia Militar (190) ou a Polícia Ambiental."
+    }
+  },
+  "process": {
+    "title": "Caminho da justiça animal",
+    "description": "Conheça o processo transparente que cada denúncia percorre em nosso sistema.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Recebimento",
+        "description": "Coleta digital de dados, fotos e evidências através do portal, com segurança e sigilo."
+      },
+      {
+        "step": "02",
+        "title": "Triagem",
+        "description": "Verificação técnica para evitar trotes e classificar urgência com critérios claros."
+      },
+      {
+        "step": "03",
+        "title": "Complementação",
+        "description": "Busca por dados adicionais ou testemunhas via canais seguros, quando necessário."
+      },
+      {
+        "step": "04",
+        "title": "Encaminhamento",
+        "description": "Envio formal às autoridades policiais, órgãos municipais ou ONGs parceiras."
+      }
+    ],
+    "disclaimer": {
+      "title": "Importante saber",
+      "text": "A ONG Todos Por Eles atua como intermediária na triagem e encaminhamento de denúncias. Não substituímos autoridades públicas como Polícia Militar, Polícia Ambiental, Ministério Público ou IBAMA. Em casos de emergência, acione diretamente os órgãos competentes."
+    }
+  },
+  "ngoDirectory": {
+    "eyebrow": "Rede de apoio",
+    "title": "Encontre ONGs próximas",
+    "description": "Consulte o diretório estadual de ONGs de proteção animal em Santa Catarina. Busque por cidade ou tipo de atuação.",
+    "cities": [
+      "Todas as cidades",
+      "Florianópolis",
+      "Joinville",
+      "Blumenau",
+      "São José",
+      "Criciúma",
+      "Chapecó",
+      "Itajaí",
+      "Jaraguá do Sul",
+      "Lages",
+      "Balneário Camboriú"
+    ],
+    "activityTypes": [
+      "Todos os tipos",
+      "Resgate e acolhimento",
+      "Adoção responsável",
+      "Castração",
+      "Atendimento veterinário",
+      "Educação e conscientização",
+      "Defesa legal"
+    ],
+    "sampleNGOs": [
+      {
+        "name": "Associação Protetora dos Animais de Florianópolis",
+        "acronym": "APAF",
+        "city": "Florianópolis",
+        "activities": ["Resgate e acolhimento", "Adoção responsável"],
+        "shortDescription": "Atua há 10 anos no resgate e reabilitação de animais de grande porte e domésticos.",
+        "category": "Resgate e Adoção",
+        "image": "/placeholder.jpg",
+        "verified": true,
+        "phone": "(48) 99999-0001",
+        "website": "www.apaf.org.br"
+      },
+      {
+        "name": "Sociedade Joinvilense de Proteção Animal",
+        "acronym": "SJPA",
+        "city": "Joinville",
+        "activities": ["Castração", "Atendimento veterinário"],
+        "shortDescription": "Foco em castração social e controle populacional em comunidades vulneráveis.",
+        "category": "Saúde Animal",
+        "image": "/placeholder.jpg",
+        "verified": true,
+        "phone": "(47) 99999-0002",
+        "website": "www.sjpa.org.br"
+      },
+      {
+        "name": "Amigos dos Animais Blumenau",
+        "acronym": "AAB",
+        "city": "Blumenau",
+        "activities": ["Resgate e acolhimento", "Educação e conscientização"],
+        "shortDescription": "Educação humanitária em escolas e suporte a protetores independentes.",
+        "category": "Educação",
+        "image": "/placeholder.jpg",
+        "verified": true,
+        "phone": "(47) 99999-0003",
+        "website": "www.aab.org.br"
+      }
+    ],
+    "ctaText": "Ver todas as ONGs cadastradas"
+  },
+  "registerNGO": {
+    "title": "Divulgue sua entidade de proteção aos animais",
+    "description": "Cadastre sua organização no diretório estadual e amplie sua visibilidade para cidadãos, parceiros e voluntários em todo o estado de Santa Catarina.",
+    "benefits": [
+      "Visibilidade em todo o estado de SC",
+      "Canal direto para repasse de denúncias triadas",
+      "Participação em editais e redes de cooperação",
+      "Perfil padronizado e verificado"
+    ],
+    "image": {
+      "src": "/placeholder.jpg",
+      "alt": "Mão humana repousando sobre a pata de um cão — símbolo de confiança e proteção"
+    },
+    "form": {
+      "heading": "Comece o cadastro",
+      "subheading": "Preencha os dados iniciais. Nossa equipe entrará em contato para completar a verificação.",
+      "fields": {
+        "ngoName": { "label": "Nome da organização", "placeholder": "Ex.: Associação Protetora dos Animais" },
+        "cnpj": { "label": "CNPJ", "placeholder": "00.000.000/0000-00" },
+        "city": { "label": "Cidade (SC)", "placeholder": "Selecione" },
+        "contactName": { "label": "Nome do responsável", "placeholder": "Seu nome completo" },
+        "email": { "label": "E-mail", "placeholder": "voce@ong.org.br" },
+        "phone": { "label": "Telefone / WhatsApp", "placeholder": "(00) 00000-0000" },
+        "activities": { "label": "Áreas de atuação" },
+        "about": { "label": "Sobre a ONG", "placeholder": "Conte brevemente sobre a missão, anos de atuação e principais projetos." },
+        "terms": { "label": "Concordo com os termos de uso e confirmo que os dados fornecidos são verdadeiros." }
+      },
+      "submit": "Enviar cadastro",
+      "note": "Seus dados são usados apenas para fins de verificação da ONG e não serão compartilhados publicamente sem consentimento."
+    }
+  },
+  "transparency": {
+    "eyebrow": "Proteção de dados",
+    "title": "Transparência e proteção de dados",
+    "description": "Operamos sob as diretrizes da Lei Geral de Proteção de Dados (LGPD). Cada denúncia é tratada com anonimato garantido e critérios claros.",
+    "pillars": [
+      { "value": "100%", "label": "Sigilo" },
+      { "value": "24/7", "label": "Monitoramento" }
+    ],
+    "criteria": {
+      "title": "Critérios de triagem",
+      "description": "Para que uma denúncia seja efetiva, solicitamos:",
+      "items": [
+        "Localização precisa (rua, número, referência)",
+        "Provas visuais (fotos ou vídeos curtos)",
+        "Descrição detalhada do fato ocorrido"
+      ]
+    },
+    "lastUpdate": "Atualizado mensalmente"
+  },
+  "faq": {
+    "title": "Dúvidas frequentes",
+    "description": "Respostas rápidas para os principais questionamentos sobre a plataforma.",
+    "items": [
+      {
+        "question": "Como faço para denunciar maus-tratos a animais?",
+        "answer": "Clique no botão 'Fazer denúncia' no topo da página e preencha o formulário com o máximo de detalhes possível. Nossa equipe de triagem analisará o caso e encaminhará para a ONG mais adequada da sua região."
+      },
+      {
+        "question": "Minha denúncia será anônima?",
+        "answer": "Sim, você pode optar por fazer a denúncia de forma anônima. No entanto, fornecer seus dados de contato pode ajudar a ONG responsável a obter mais informações se necessário."
+      },
+      {
+        "question": "Quanto tempo leva para minha denúncia ser atendida?",
+        "answer": "Nossa equipe faz a triagem em até 24 horas úteis. Após o encaminhamento, o tempo de resposta depende da disponibilidade da ONG responsável, que será notificada imediatamente."
+      },
+      {
+        "question": "Como as ONGs são selecionadas para o diretório?",
+        "answer": "Todas as ONGs passam por um processo de verificação que inclui validação de CNPJ, comprovação de atuação em proteção animal e análise de histórico. Buscamos garantir que apenas organizações sérias e comprometidas façam parte da plataforma."
+      },
+      {
+        "question": "Minha ONG pode se cadastrar?",
+        "answer": "Sim! Se sua organização atua na proteção animal em Santa Catarina, possui CNPJ ativo e cumpre os requisitos mínimos, clique em 'Cadastrar sua ONG' e preencha o formulário. A análise leva até 7 dias úteis."
+      },
+      {
+        "question": "A plataforma cobra alguma taxa das ONGs?",
+        "answer": "Não. A plataforma é 100% gratuita para ONGs e cidadãos. Nosso objetivo é facilitar a proteção animal, não gerar receita. Eventuais custos operacionais são cobertos por doações e parcerias."
+      },
+      {
+        "question": "O que acontece após fazer uma denúncia?",
+        "answer": "Sua denúncia é recebida pela nossa equipe, que faz uma triagem para identificar a gravidade e localização. Em seguida, encaminhamos para a ONG mais adequada da região, que entrará em contato se você forneceu seus dados."
+      },
+      {
+        "question": "Posso acompanhar o andamento da minha denúncia?",
+        "answer": "Se você forneceu e-mail ou telefone, receberá atualizações sobre o encaminhamento. Em breve, teremos um sistema de acompanhamento online onde você poderá ver o status da denúncia."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "ONG de proteção animal em Santa Catarina. Denúncia responsável, diretório estadual e rede de apoio.",
+    "columns": [
+      {
+        "title": "Institucional",
+        "links": [
+          { "label": "Sobre a ONG", "href": "/sobre" },
+          { "label": "Termos de uso", "href": "/termos" },
+          { "label": "Política de privacidade", "href": "/privacidade" },
+          { "label": "Contato", "href": "/contato" }
+        ]
+      },
+      {
+        "title": "Serviços",
+        "links": [
+          { "label": "Fazer denúncia", "href": "#denuncia" },
+          { "label": "Buscar ONGs", "href": "#ongs" },
+          { "label": "Cadastrar ONG", "href": "#cadastrar" }
+        ]
+      },
+      {
+        "title": "Transparência",
+        "links": [
+          { "label": "Relatório anual", "href": "/transparencia" },
+          { "label": "Dados abertos", "href": "/transparencia#dados" }
+        ]
+      }
+    ],
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com", "icon": "Instagram" },
+      { "label": "Facebook", "href": "https://facebook.com", "icon": "Facebook" },
+      { "label": "E-mail", "href": "mailto:contato@todosporeles.org.br", "icon": "Mail" }
+    ],
+    "copyright": "© {{year}} Todos Por Eles — ONG de Proteção Animal. Todos os direitos reservados."
+  }
+}

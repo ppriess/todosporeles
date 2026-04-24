@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#775a00",
+                      "primary-container": "#0059c1",
+                      "tertiary-fixed": "#d7e2ff",
+                      "primary": "#004293",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dfd9d2",
+                      "surface-tint": "#045ac2",
+                      "on-primary-container": "#c7d7ff",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#aec6ff",
+                      "on-secondary-fixed-variant": "#5a4300",
+                      "surface-container-highest": "#e8e2da",
+                      "background": "#fff8f1",
+                      "tertiary": "#124489",
+                      "error-container": "#ffdad6",
+                      "outline": "#727784",
+                      "secondary-fixed-dim": "#f6be18",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#acc7ff",
+                      "on-primary-fixed-variant": "#004395",
+                      "surface-container": "#f3ede5",
+                      "on-secondary-fixed": "#251a00",
+                      "tertiary-container": "#325ca2",
+                      "surface-container-high": "#ede7e0",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#33302b",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#ffdf99",
+                      "secondary-container": "#fcc420",
+                      "on-tertiary-container": "#c5d7ff",
+                      "inverse-primary": "#aec6ff",
+                      "on-secondary-container": "#6d5200",
+                      "on-surface": "#1d1b17",
+                      "on-tertiary-fixed": "#001a40",
+                      "surface-variant": "#e8e2da",
+                      "outline-variant": "#c2c6d5",
+                      "on-surface-variant": "#424753",
+                      "on-background": "#1d1b17",
+                      "inverse-on-surface": "#f6f0e8",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#d8e2ff",
+                      "on-primary-fixed": "#001a42",
+                      "surface": "#fff8f1",
+                      "surface-container-low": "#f9f3eb",
+                      "surface-bright": "#fff8f1",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#14458a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Public Sans"],
+                      "label": ["Public Sans"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Public Sans', sans-serif; background-color: #fff8f1; color: #1d1b17; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+      </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-[#fff8f1]/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(29,27,23,0.06)]">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tighter text-[#004293] uppercase font-['Manrope']">
+                Civic Guardian
+            </div>
+<div class="hidden md:flex gap-8 font-['Manrope'] font-semibold tracking-tight">
+<a class="text-[#004293] border-b-2 border-[#004293] pb-1" href="#">Início</a>
+<a class="text-slate-600 hover:text-[#004293] transition-colors duration-300" href="#">Denúncias</a>
+<a class="text-slate-600 hover:text-[#004293] transition-colors duration-300" href="#">ONGs em SC</a>
+<a class="text-slate-600 hover:text-[#004293] transition-colors duration-300" href="#">Transparência</a>
+<a class="text-slate-600 hover:text-[#004293] transition-colors duration-300" href="#">FAQ</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-slate-600 font-semibold px-4 py-2 hover:opacity-80 transition-opacity">Entrar</button>
+<button class="bg-gradient-to-v from-primary to-primary-container text-white px-6 py-2.5 rounded-md font-semibold font-headline shadow-md hover:scale-[0.98] transition-transform">
+                    Fazer denúncia
+                </button>
+</div>
+</nav>
+</header>
+<main class="flex-grow pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 pt-12 pb-24 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container/20 text-on-secondary-container rounded-full border border-secondary/10">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-[10px] font-bold tracking-widest uppercase font-label">Governo do Estado de Santa Catarina</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1]">
+                    Voz e Proteção aos <br/> <span class="text-secondary">Animais de SC.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    A plataforma oficial de proteção animal institucional. Um canal seguro para denúncias de maus-tratos e o maior diretório de suporte às ONGs do estado.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all">Fazer denúncia</button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all">Buscar ONGs</button>
+</div>
+<div class="flex flex-wrap gap-8 pt-6 border-t border-outline-variant/30">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">security</span>
+<span class="text-sm font-semibold text-on-surface/70">Triagem responsável</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">map</span>
+<span class="text-sm font-semibold text-on-surface/70">Diretório estadual</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">visibility_off</span>
+<span class="text-sm font-semibold text-on-surface/70">Sigilo absoluto</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of a rescued golden retriever dog looking into the camera with soft window light in a clean architectural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNU4SfRa7tpWn7Q9US8jairE5u0OmGVxmhIjsNCQWNvG2eWvM7hU3N7z2ZmCMcXyvcfykiP1P1owxOqVR3Zklm36oF8a2Y-_KpGd2XWpJZmDuXxvCHjiNoNroP0ynwLsK5DBx0mAebtvIhcNnRXEbG5bwpqHj41xMGJRC9nfFAXeBemcqfJNzIDvCaFoHY75C9gFiEDgQtUakQ3w8ncPyQ0H60Q2nVihD-musg2gFUq9OOk03wyyrtlbf_g9Tz6V7erLuGx1UOq8g"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl flex items-center gap-4 max-w-xs">
+<div class="bg-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">+12.4k</p>
+<p class="text-xs text-on-surface-variant font-medium">Animais protegidos este ano através de denúncias oficiais.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Escolha seu caminho -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<p class="text-secondary font-bold tracking-widest text-xs uppercase mb-2">Engajamento Cívico</p>
+<h2 class="text-4xl font-extrabold text-primary tracking-tight">Como você deseja contribuir hoje?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-8px]">
+<div class="w-14 h-14 bg-error-container rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-error text-3xl">report_problem</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Fazer uma denúncia</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Relate casos de maus-tratos, abandono ou agressão. Sua identidade é protegida sob sigilo institucional.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all" href="#">
+                            Iniciar processo <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-8px]">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Apoiar uma ONG</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Localize instituições verificadas em Santa Catarina que precisam de doações, voluntários ou adoções responsáveis.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all" href="#">
+                            Ver diretório <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-8px]">
+<div class="w-14 h-14 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">app_registration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Cadastrar sua ONG</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Sua organização atua em SC? Cadastre-se para receber suporte governamental e visibilidade institucional.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all" href="#">
+                            Formulário de acesso <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- O que é maus-tratos -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-4 sticky top-32">
+<p class="text-secondary font-bold tracking-widest text-xs uppercase mb-2">Base Legal e Ética</p>
+<h2 class="text-4xl font-extrabold text-primary tracking-tight mb-6">O que configura <br/>maus-tratos?</h2>
+<p class="text-on-surface-variant leading-relaxed">Entender os sinais é o primeiro passo para a proteção. A legislação catarinense é rigorosa quanto à dignidade animal.</p>
+<div class="mt-10 p-6 bg-surface-container border-l-4 border-secondary rounded-r-lg">
+<p class="text-sm italic text-on-surface-variant">"Maus-tratos não é apenas agressão física. Privação de luz, água ou espaço adequado também constitui crime ambiental."</p>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 bg-surface border border-outline-variant/20 rounded-xl">
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary">block</span>
+<h4 class="font-bold text-xl text-primary">Abandono</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Deixar animais em vias públicas, imóveis vazios ou sem assistência básica de saúde e alimentação.</p>
+</div>
+<div class="p-8 bg-surface border border-outline-variant/20 rounded-xl">
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary">back_hand</span>
+<h4 class="font-bold text-xl text-primary">Agressão Física</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Golpes, mutilações, envenenamentos ou qualquer ato que cause dor e sofrimento físico deliberado.</p>
+</div>
+<div class="p-8 bg-surface border border-outline-variant/20 rounded-xl">
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary">link_off</span>
+<h4 class="font-bold text-xl text-primary">Confinamento</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Manter o animal acorrentado, em espaços minúsculos, sem ventilação ou higiene básica.</p>
+</div>
+<div class="p-8 bg-surface border border-outline-variant/20 rounded-xl">
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary">health_and_safety</span>
+<h4 class="font-bold text-xl text-primary">Negligência</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Falta de assistência veterinária em casos de doença, ausência de abrigo contra sol e chuva.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Como funciona a denúncia -->
+<section class="bg-primary text-on-primary py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4">Caminho da Justiça Animal</h2>
+<p class="text-primary-fixed-dim max-w-2xl mx-auto">Conheça o processo transparente que cada denúncia percorre em nosso sistema.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-on-primary/10 -translate-y-1/2"></div>
+<div class="relative z-10 bg-primary p-6 text-center">
+<div class="w-12 h-12 bg-on-primary text-primary font-black rounded-full flex items-center justify-center mx-auto mb-6">1</div>
+<h4 class="font-bold mb-2">Recebimento</h4>
+<p class="text-xs text-primary-fixed-dim">Coleta digital de dados, fotos e evidências através do portal.</p>
+</div>
+<div class="relative z-10 bg-primary p-6 text-center">
+<div class="w-12 h-12 bg-on-primary text-primary font-black rounded-full flex items-center justify-center mx-auto mb-6">2</div>
+<h4 class="font-bold mb-2">Triagem</h4>
+<p class="text-xs text-primary-fixed-dim">Verificação técnica para evitar trotes e classificar urgência.</p>
+</div>
+<div class="relative z-10 bg-primary p-6 text-center">
+<div class="w-12 h-12 bg-on-primary text-primary font-black rounded-full flex items-center justify-center mx-auto mb-6">3</div>
+<h4 class="font-bold mb-2">Complementação</h4>
+<p class="text-xs text-primary-fixed-dim">Busca por dados adicionais ou testemunhas via canais seguros.</p>
+</div>
+<div class="relative z-10 bg-primary p-6 text-center">
+<div class="w-12 h-12 bg-on-primary text-primary font-black rounded-full flex items-center justify-center mx-auto mb-6">4</div>
+<h4 class="font-bold mb-2">Encaminhamento</h4>
+<p class="text-xs text-primary-fixed-dim">Envio formal às autoridades policiais ou órgãos municipais.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ONGs em SC Directory -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+<div>
+<p class="text-secondary font-bold tracking-widest text-xs uppercase mb-2">Rede de Apoio</p>
+<h2 class="text-4xl font-extrabold text-primary tracking-tight">Encontre ONGs próximas</h2>
+</div>
+<div class="flex gap-4 w-full md:w-auto">
+<select class="bg-surface-container border-none rounded-lg text-sm px-4 py-3 focus:ring-2 focus:ring-primary">
+<option>Todas as Cidades</option>
+<option>Florianópolis</option>
+<option>Joinville</option>
+<option>Blumenau</option>
+</select>
+<select class="bg-surface-container border-none rounded-lg text-sm px-4 py-3 focus:ring-2 focus:ring-primary">
+<option>Tipo de Atuação</option>
+<option>Resgate</option>
+<option>Castração</option>
+<option>Educação</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card ONG 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Modern animal shelter facility with clean white walls and volunteer playing with a puppy in a sunlit grassy courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3GYXlMSxIiqsRsmdX4knKpW-rNZL74v2wlr4dQUZCzvxjQ-Qmudd5glwSlVlZXIo-94yAA1Ta-VTJ70uJZsNckqJHG452x6SjiICT8vPPsZJtU8gdqnLV5pnB8wa8dQG3MGchNc-4EENTTSudCPwjfAZWEQ3NpgS3jCwrIBM715U0PbKuINH9gs5cbJxchXzGsWf7GjLS8zSghxgSkBAa2MKo0MBH4XrGx0WZpbNmuEJHA2ouyGeyt2xY9aoI5DoyEUYgpuHICA"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">Verificada</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary mb-1">Patinhas do Bem</h4>
+<p class="text-xs text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Florianópolis, SC
+                            </p>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Atua há 10 anos no resgate e reabilitação de animais de grande porte e domésticos.</p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/10">
+<span class="text-xs font-bold text-secondary">Resgate e Adoção</span>
+<button class="text-primary font-bold text-sm">Ver Detalhes</button>
+</div>
+</div>
+</div>
+<!-- Card ONG 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Interior of a professional veterinary clinic for a non-profit organization with medical equipment and warm wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3klJpbJbAdTBwKmb9-hDzF6CR-6lvct9wF9y7RaBKRSVHtZr1lWFg4c4Gl41hRcJhske-p8598i9tdYv3fs20dRUjrGxupCQ27ro1ZQGxZZY--ZVdFjclPi-DMrGtalB4tgn4rHPibYYYqemXBjdaRgIM2obAAtElR54VNbTKkbOpGum2P_HT8AJB5HrmNf_yBx3AwnZ8zrFp39ela6bpqcB_hOERuD3rsCadMs1rMoNLfcmEtNVz0_R2mLINCW1hYjgonVB46OY"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">Verificada</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary mb-1">Instituto Protetor</h4>
+<p class="text-xs text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Joinville, SC
+                            </p>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Foco em castração social e controle populacional em comunidades vulneráveis.</p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/10">
+<span class="text-xs font-bold text-secondary">Saúde Animal</span>
+<button class="text-primary font-bold text-sm">Ver Detalhes</button>
+</div>
+</div>
+</div>
+<!-- Card ONG 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Volunteer group holding educational signs about animal protection in a public square during a bright afternoon event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbpGOvApTCtNDDJ3y5t6IhsoihNdxhgdMn5k0N4Kj_zX4L7IRqGod35JUKpvNzMYubS6J69XOTt_XaI4CwvgHnE-Uq61VCRvaWaHsV6Id17FLwyt7ESVWj8lUO5n28ybbLYWcg6aEt_3TXi7zSe7SOW_BaKZJ6KlxOm_BkMYtiX2OYJ-vR6MGf3DYGy8_OEE3l-0jVPLGF41XBJloUcEPOM2fUz1A5FpnKs40XJZqfremxYjf6CKMmr-Cs1ToABtExKBdAYcwtlw"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">Verificada</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary mb-1">Amigos dos Peludos</h4>
+<p class="text-xs text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Blumenau, SC
+                            </p>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Educação humanitária em escolas e suporte a protetores independentes.</p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/10">
+<span class="text-xs font-bold text-secondary">Educação</span>
+<button class="text-primary font-bold text-sm">Ver Detalhes</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cadastre sua ONG -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-surface-container-high rounded-3xl overflow-hidden flex flex-col lg:flex-row">
+<div class="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+<h2 class="text-4xl font-extrabold text-primary tracking-tight mb-6">Sua ONG merece o selo de proteção institucional.</h2>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Visibilidade em todo o estado de SC</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Canal direto para repasse de denúncias triadas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Participação em editais governamentais</span>
+</li>
+</ul>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg self-start hover:scale-[1.02] transition-transform">Cadastrar Organização</button>
+</div>
+<div class="lg:w-1/2 min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="Close up of a human hand gently resting on a dog's paw, representing trust and the bond between protection agencies and animals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSG8yj01LuDumDI-XYumGQpSBC_gDn3OELoUaUxHqixCcaW0l8e50geOS6wiPXgrie-1Vx6_fRyaIjKJnqPFIC2pcU_jSa_q0nEx_xCggOFhew1LxpEDVM9a4uW4CH0VUHAV1eqcDzp6iVXZvYQ_xD6SeIB1lVKTzmwSkM0uqyFOiT5GEmUZjhdv5QMAN3fqVSojOaNxnwoAZQQgX0LA3MVvE-sZr9KEZAujcw4CI-U1uRmF_4bnH85-ICS9yk-AvRbI0I7gNco88"/>
+</div>
+</div>
+</section>
+<!-- Transparência e Critérios -->
+<section class="py-24 px-8 max-w-7xl mx-auto border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mb-6">Transparência e <br/>Proteção de Dados</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">Operamos sob as diretrizes da Lei Geral de Proteção de Dados (LGPD) e o rigoroso protocolo de segurança do Governo Estadual. Cada denúncia é tratada com anonimato garantido.</p>
+<div class="flex items-center gap-6">
+<div class="text-center">
+<p class="text-3xl font-bold text-secondary">100%</p>
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Sigilo</p>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/40"></div>
+<div class="text-center">
+<p class="text-3xl font-bold text-secondary">24/7</p>
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Monitoramento</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10">
+<h4 class="font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">gavel</span> Critérios de Triagem
+                    </h4>
+<p class="text-sm text-on-surface-variant mb-4">Para que uma denúncia seja efetiva, solicitamos:</p>
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">arrow_right</span> Localização precisa (rua, número, referência)
+                        </div>
+<div class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">arrow_right</span> Provas visuais (fotos ou vídeos curtos)
+                        </div>
+<div class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">arrow_right</span> Descrição detalhada do fato ocorrido
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Preview -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mb-4">Dúvidas Frequentes</h2>
+<p class="text-on-surface-variant">Respostas rápidas para os principais questionamentos sobre o portal.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-primary">
+<span>A denúncia é realmente anônima?</span>
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-primary">
+<span>Quanto tempo leva para uma denúncia ser apurada?</span>
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-primary">
+<span>Quais animais podem ser protegidos por este canal?</span>
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fdf2e9] dark:bg-slate-950 w-full py-12 px-8 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Manrope'] font-bold text-lg text-[#004293] mb-4">Civic Guardian</div>
+<p class="text-slate-500 text-xs uppercase tracking-widest leading-relaxed">Proteção Animal institucional para o Estado de Santa Catarina.</p>
+</div>
+<div>
+<h5 class="font-['Manrope'] font-bold text-[#004293] mb-4">Institucional</h5>
+<ul class="space-y-2 text-xs uppercase tracking-widest text-slate-500">
+<li><a class="hover:underline decoration-[#775a00]" href="#">Privacidade</a></li>
+<li><a class="hover:underline decoration-[#775a00]" href="#">Termos de Uso</a></li>
+<li><a class="hover:underline decoration-[#775a00]" href="#">Ouvidoria</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Manrope'] font-bold text-[#004293] mb-4">Serviços</h5>
+<ul class="space-y-2 text-xs uppercase tracking-widest text-slate-500">
+<li><a class="hover:underline decoration-[#775a00]" href="#">Denunciar</a></li>
+<li><a class="hover:underline decoration-[#775a00]" href="#">Buscar ONGs</a></li>
+<li><a class="hover:underline decoration-[#775a00]" href="#">Cadastro Institucional</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Manrope'] font-bold text-[#004293] mb-4">Transparência</h5>
+<ul class="space-y-2 text-xs uppercase tracking-widest text-slate-500">
+<li><a class="text-[#004293] font-bold" href="#">Relatório Anual 2023</a></li>
+<li><a class="hover:underline decoration-[#775a00]" href="#">Dados Abertos</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-300 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-[10px] uppercase tracking-[0.2em]">© 2024 Governo do Estado de Santa Catarina. Proteção Animal Institucional.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+</div>
+</footer>
+</body></html>
