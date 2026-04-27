@@ -34,20 +34,15 @@ export function Header() {
       )}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between py-3">
-        <Link href="#inicio" className="flex items-center gap-3" aria-label={brand.name}>
-          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-            <Image
-              src={brand.logo}
-              alt={brand.name}
-              width={brand.logoWidth}
-              height={brand.logoHeight}
-              priority
-              style={{ height: `${brand.logoHeight}px`, width: "auto", maxWidth: `${brand.logoWidth}px` }}
-            />
-          </div>
-          <span className="text-[#fcc420] font-display font-bold text-lg tracking-tight hidden sm:inline-block">
-            TODOS POR ELES
-          </span>
+        <Link href="#inicio" className="flex items-center" aria-label={brand.name}>
+          <Image
+            src={brand.logo}
+            alt={brand.name}
+            width={brand.logoWidth}
+            height={brand.logoHeight}
+            priority
+            style={{ height: `${brand.logoHeight}px`, width: "auto", maxWidth: `${brand.logoWidth}px` }}
+          />
         </Link>
 
         <div className="hidden md:flex gap-8 font-display font-semibold tracking-tight text-sm">

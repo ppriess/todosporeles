@@ -2,8 +2,8 @@
   "brand": {
     "name": "Todos Por Eles",
     "tagline": "ONG de proteção animal em Santa Catarina",
-    "logo": "/logo.png",
-    "logoWidth": 180,
+    "logo": "/logo-horizontal-header.png",
+    "logoWidth": 375,
     "logoHeight": 60
   },
   "nav": {
