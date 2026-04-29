@@ -215,3 +215,27 @@
     font-family: var(--font-display);
   }
 }
+
+@layer components {
+  .highlight-brand {
+    border-bottom: 2.5px solid #B8860B;
+    padding-bottom: 1px;
+  }
+
+  .highlight-phrase {
+    position: relative;
+    display: inline;
+  }
+
+  .highlight-phrase::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 7px;
+    background: rgba(184, 134, 11, 0.22);
+    border-radius: 2px;
+    z-index: -1;
+  }
+}

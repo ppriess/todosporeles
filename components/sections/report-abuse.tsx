@@ -4,7 +4,8 @@ import { useState } from "react"
 import { useForm, Controller } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { CheckCircle2, Loader2, Upload, X } from "lucide-react"
+import { AlertCircle, CheckCircle2, Loader2, Upload, X } from "lucide-react"
+import { supabase } from "@/lib/supabase"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -46,11 +47,13 @@ interface UploadedFile {
   name: string
   size: number
   id: string
+  file: File
 }
 
 export function ReportAbuse() {
   const [submitted, setSubmitted] = useState(false)
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([])
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const {
     register,
@@ -78,11 +81,44 @@ export function ReportAbuse() {
   const denuncia_anonima = watch("denuncia_anonima")
   const selectedReportType = watch("tipo_denuncia")
 
-  const onSubmit = async (_data: FormValues) => {
-    // TODO: integrar com Supabase para enviar denúncia
-    await new Promise((r) => setTimeout(r, 600))
-    setSubmitted(true)
-    setUploadedFiles([])
+  const onSubmit = async (data: FormValues) => {
+    setSubmitError(null)
+    try {
+      const evidencias_urls: string[] = []
+
+      for (const uploadedFile of uploadedFiles) {
+        const ext = uploadedFile.name.split(".").pop()?.toLowerCase()
+        const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`
+
+        const { data: storageData, error: storageError } = await supabase.storage
+          .from("evidencias")
+          .upload(path, uploadedFile.file)
+
+        if (storageError) throw storageError
+        evidencias_urls.push(storageData.path)
+      }
+
+      const { error } = await supabase.from("denuncias").insert({
+        denunciante_nome: data.denuncia_anonima ? null : data.denunciante_nome || null,
+        denunciante_email: data.denuncia_anonima ? null : data.denunciante_email || null,
+        denunciante_telefone: data.denuncia_anonima ? null : data.denunciante_telefone || null,
+        denuncia_anonima: data.denuncia_anonima,
+        tipo_denuncia: data.tipo_denuncia,
+        data_ocorrencia: data.data_ocorrencia,
+        local_ocorrencia: data.local_ocorrencia,
+        descricao_fato: data.descricao_fato,
+        risco_iminente: data.risco_iminente,
+        evidencias_urls,
+      })
+
+      if (error) throw error
+
+      setSubmitted(true)
+      setUploadedFiles([])
+    } catch (err) {
+      console.error("Erro ao enviar denúncia:", err)
+      setSubmitError("Ocorreu um erro ao enviar sua denúncia. Por favor, tente novamente.")
+    }
   }
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,6 +139,7 @@ export function ReportAbuse() {
         name: file.name,
         size: file.size,
         id: `${Date.now()}-${i}`,
+        file,
       })
     }
 
@@ -474,6 +511,13 @@ export function ReportAbuse() {
                   <p style={{ fontSize: '0.75rem', color: 'var(--destructive)' }}>{errors.termos_aceite.message}</p>
                 )}
               </div>
+
+              {submitError && (
+                <div className="flex items-start gap-3 bg-destructive/5 border border-destructive/20 rounded-lg p-4">
+                  <AlertCircle className="w-4 h-4 text-destructive mt-0.5 shrink-0" />
+                  <p style={{ fontSize: '0.875rem', color: 'var(--destructive)' }}>{submitError}</p>
+                </div>
+              )}
 
               <Button
                 type="submit"

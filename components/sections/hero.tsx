@@ -37,7 +37,14 @@ export function Hero() {
         </h1>
 
         <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-          {hero.description}
+          Uma iniciativa da ONG{" "}
+          <span className="highlight-brand">Todos Por Eles</span> que conecta cidadãos, ONGs e
+          autoridades para{" "}
+          <span className="highlight-phrase">
+            fortalecer a proteção animal em Santa Catarina
+          </span>
+          . Faça denúncias com triagem responsável e encontre organizações de proteção em todo o
+          estado.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-4">
