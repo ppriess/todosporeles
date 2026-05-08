@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
   `
 
   const { error: emailError } = await resend.emails.send({
-    from: "Todos Por Eles <noreply@todosporeles.org.br>",
+    from: "Todos Por Eles <noreply@todosporeles.com.br>",
     to: destinatario,
     subject: `[Denúncia] ${d.tipo_denuncia} — ${d.local_ocorrencia}`,
     html,

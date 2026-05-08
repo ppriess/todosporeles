@@ -28,10 +28,11 @@ Status: `[ ]` pendente · `[x]` concluído
 
 ## Pendências da área admin
 
-- [ ] Adicionar `RESEND_API_KEY` no `.env.local` e configurar domínio remetente no Resend
-- [ ] Criar usuário admin no Supabase Auth (Dashboard → Authentication → Users)
-- [ ] Rodar migrations no Supabase (Dashboard → SQL Editor)
-- [ ] Adaptar `from:` na API de email para domínio verificado no Resend
+- [x] Adicionar `RESEND_API_KEY` no `.env.local` e configurar domínio remetente no Resend
+- [x] Criar usuário admin no Supabase Auth (Dashboard → Authentication → Users)
+- [x] Rodar migrations no Supabase (Dashboard → SQL Editor)
+- [x] Adaptar `from:` na API de email para domínio verificado no Resend (`noreply@todosporeles.com.br`)
+- [ ] Transformar lista de denúncias (`/admin/denuncias`) em kanban com colunas por status (Recebida / Em análise / Encaminhada / Arquivada) — arrastar card muda status no BD
 
 ## Terminologia (ONG → Entidade)
 
