@@ -4,7 +4,8 @@ import { useState } from "react"
 import { useForm, Controller } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { CheckCircle2, Loader2 } from "lucide-react"
+import { AlertCircle, CheckCircle2, Loader2 } from "lucide-react"
+import { supabase } from "@/lib/supabase"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -45,6 +46,7 @@ type FormValues = z.infer<typeof schema>
 
 export function RegisterNGO() {
   const [submitted, setSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const {
     register,
@@ -77,10 +79,25 @@ export function RegisterNGO() {
     setValue("activities", next, { shouldValidate: true })
   }
 
-  const onSubmit = async (_data: FormValues) => {
-    // TODO: integrar com Supabase (auth + insert na tabela ngo_registrations)
-    await new Promise((r) => setTimeout(r, 600))
-    setSubmitted(true)
+  const onSubmit = async (data: FormValues) => {
+    setSubmitError(null)
+    try {
+      const { error } = await supabase.from("ngo_registrations").insert({
+        ngo_name: data.ngoName,
+        cnpj: data.cnpj,
+        city: data.city,
+        contact_name: data.contactName,
+        email: data.email,
+        phone: data.phone,
+        activities: data.activities,
+        about: data.about,
+      })
+      if (error) throw error
+      setSubmitted(true)
+    } catch (err) {
+      console.error("Erro ao enviar cadastro:", err)
+      setSubmitError("Ocorreu um erro ao enviar o cadastro. Por favor, tente novamente.")
+    }
   }
 
   return (
@@ -376,6 +393,13 @@ export function RegisterNGO() {
                 </div>
                 {errors.terms && (
                   <p style={{ fontSize: '0.75rem', color: 'var(--destructive)' }}>{errors.terms.message}</p>
+                )}
+
+                {submitError && (
+                  <div className="flex items-start gap-3 bg-destructive/5 border border-destructive/20 rounded-lg p-4">
+                    <AlertCircle className="w-4 h-4 text-destructive mt-0.5 shrink-0" />
+                    <p style={{ fontSize: '0.875rem', color: 'var(--destructive)' }}>{submitError}</p>
+                  </div>
                 )}
 
                 <Button

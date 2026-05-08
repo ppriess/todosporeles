@@ -68,8 +68,15 @@ Do NOT waste tokens displaying diffs to the user on the CLI terminal.
 - `@/*` path alias resolves to the repository root.
 - `next.config.mjs` has `ignoreBuildErrors: true` — fix type errors before committing even though builds pass.
 
-## Current Limitations
+## Gestão de tarefas
 
-- No backend exists; all inter-section links are client-side anchors (`#section-id`).
-- Footer links to `/sobre`, `/termos`, `/privacidade`, `/transparencia`, `/contato` — these pages do not exist yet.
-- All content is in Portuguese (pt-BR).
+Ao identificar qualquer pendência, bug, gap de integração ou melhoria durante o trabalho, registre imediatamente em `tasks.md` antes de continuar. Não deixe tarefas apenas no contexto da conversa.
+
+## Contexto adicional
+
+| Arquivo | Conteúdo |
+|---|---|
+| `tasks.md` | Pendências e roadmap |
+| `app/v2/DESIGN.md` | Design system: paleta, tipografia, componentes, regras visuais |
+
+Todo o conteúdo está em português (pt-BR).
