@@ -68,6 +68,21 @@ Do NOT waste tokens displaying diffs to the user on the CLI terminal.
 - `@/*` path alias resolves to the repository root.
 - `next.config.mjs` has `ignoreBuildErrors: true` — fix type errors before committing even though builds pass.
 
+## Deploy — Render
+
+O projeto é deployado no **Render** (não Vercel). Pipeline: local → GitHub (`main`) → Render auto-deploy.
+
+- Build command: `pnpm install && pnpm build`
+- Start command: `pnpm start`
+- **`next.config.mjs` deve usar caminhos absolutos.** O Render executa o processo num diretório diferente, então `turbopack.root: '.'` quebra com `ELIFECYCLE Command failed`. Sempre use `__dirname` via `import.meta.url`:
+
+```js
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+const __dirname = dirname(fileURLToPath(import.meta.url))
+// turbopack: { root: __dirname }
+```
+
 ## Gestão de tarefas
 
 Ao identificar qualquer pendência, bug, gap de integração ou melhoria durante o trabalho, registre imediatamente em `tasks.md` antes de continuar. Não deixe tarefas apenas no contexto da conversa.
