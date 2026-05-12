@@ -1,3 +1,5 @@
+import { cookies, headers } from "next/headers"
+import { createClient } from "@/supabase/utils/supabase/server"
 import { Header } from "@/components/header"
 import { Hero } from "@/components/sections/hero"
 import { Pathways } from "@/components/sections/pathways"
@@ -10,7 +12,33 @@ import { Transparency } from "@/components/sections/transparency"
 import { FAQ } from "@/components/sections/faq"
 import { Footer } from "@/components/footer"
 
-export default function Home() {
+export default async function Home() {
+  const cookieStore = await cookies()
+  const supabase = createClient(cookieStore)
+  const headersList = await headers()
+
+  // Vercel injeta x-vercel-ip-city automaticamente em produção
+  const rawCity = headersList.get("x-vercel-ip-city")
+  const userCity = rawCity ? decodeURIComponent(rawCity) : null
+
+  const { data: all } = await supabase
+    .from("entidades")
+    .select("id, nome, cidade, atividades, descricao, tipo, verificada, website, telefone")
+    .eq("ativa", true)
+    .order("nome", { ascending: true })
+
+  const sorted = [...(all ?? [])].sort((a, b) => {
+    if (userCity) {
+      const aMatch = a.cidade === userCity
+      const bMatch = b.cidade === userCity
+      if (aMatch && !bMatch) return -1
+      if (bMatch && !aMatch) return 1
+    }
+    return 0
+  })
+
+  const featured = sorted.slice(0, 3)
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -20,7 +48,7 @@ export default function Home() {
         <ReportAbuse />
         <WhatIsAbuse />
         <Process />
-        <NGODirectory />
+        <NGODirectory entidades={featured} userCity={userCity} />
         <RegisterNGO />
         <Transparency />
         <FAQ />
