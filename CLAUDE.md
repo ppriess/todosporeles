@@ -83,6 +83,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // turbopack: { root: __dirname }
 ```
 
+⚠️ **CRITICAL:** This setting is easy to forget or mess up. If you see `ELIFECYCLE Command failed` or warnings about "turbopack.root should be absolute" during Render deployment, the config is wrong. Always verify `turbopack.root` is set using `__dirname` (absolute path), never relative paths or hardcoded values.
+
 ## Gestão de tarefas
 
 Ao identificar qualquer pendência, bug, gap de integração ou melhoria durante o trabalho, registre imediatamente em `tasks.md` antes de continuar. Não deixe tarefas apenas no contexto da conversa.
