@@ -10,7 +10,7 @@
     "items": [
       { "label": "Início", "href": "#inicio" },
       { "label": "Denúncia", "href": "#denuncia" },
-      { "label": "ONGs em SC", "href": "#ongs" },
+      { "label": "Entidades em SC", "href": "#ongs" },
       { "label": "Transparência", "href": "#transparencia" },
       { "label": "FAQ", "href": "#faq" }
     ],
@@ -21,13 +21,13 @@
     "badge": "Plataforma de Proteção Animal em Santa Catarina",
     "headline": {
       "part1": "Denuncie maus-tratos.",
-      "part2": "Encontre ONGs.",
+      "part2": "Encontre entidades.",
       "part3": "Proteja os animais."
     },
-    "description": "Uma iniciativa da ONG Todos Por Eles que conecta cidadãos, ONGs e autoridades para fortalecer a proteção animal em Santa Catarina. Faça denúncias com triagem responsável e encontre organizações de proteção em todo o estado.",
+    "description": "Uma iniciativa da ONG Todos Por Eles que conecta cidadãos, entidades e autoridades para fortalecer a proteção animal em Santa Catarina. Faça denúncias com triagem responsável e encontre organizações de proteção em todo o estado.",
     "cta_denuncia": "Fazer denúncia",
-    "cta_busca": "Buscar ONGs em SC",
-    "cta_cadastro": "Cadastrar sua ONG",
+    "cta_busca": "Buscar entidades em SC",
+    "cta_cadastro": "Cadastrar sua entidade",
     "image": {
       "src": "/todos-por-eles-animais-protegidos-hero-home.jpg",
       "alt": "Cão resgatado em retrato editorial, olhando para a câmera com luz suave"
@@ -38,7 +38,7 @@
     },
     "trustPoints": [
       { "title": "Triagem responsável", "description": "Análise criteriosa de cada denúncia", "icon": "Shield" },
-      { "title": "Diretório estadual de ONGs", "description": "Rede de proteção em todo o estado", "icon": "MapPin" },
+      { "title": "Diretório estadual de entidades", "description": "Rede de proteção em todo o estado", "icon": "MapPin" },
       { "title": "Sigilo e critérios claros", "description": "Proteção de dados e transparência", "icon": "Lock" }
     ]
   },
@@ -59,8 +59,8 @@
       {
         "icon": "HeartHandshake",
         "iconTone": "primary",
-        "title": "Apoiar uma ONG",
-        "description": "Consulte o diretório estadual de ONGs de proteção animal. Encontre organizações por cidade ou tipo de atuação.",
+        "title": "Apoiar uma entidade",
+        "description": "Consulte o diretório estadual de entidades de proteção animal. Encontre organizações por cidade ou tipo de atuação.",
         "cta": "Ver diretório",
         "href": "#ongs",
         "note": "Acesso livre e gratuito"
@@ -68,7 +68,7 @@
       {
         "icon": "ClipboardPlus",
         "iconTone": "secondary",
-        "title": "Cadastrar sua ONG",
+        "title": "Cadastrar sua entidade",
         "description": "Registre sua organização no diretório estadual e amplie sua visibilidade para cidadãos e parceiros em todo o estado.",
         "cta": "Formulário de cadastro",
         "href": "#cadastrar",
@@ -150,8 +150,8 @@
   },
   "ngoDirectory": {
     "eyebrow": "Rede de apoio",
-    "title": "Encontre ONGs próximas",
-    "description": "Consulte o diretório estadual de ONGs de proteção animal em Santa Catarina. Busque por cidade ou tipo de atuação.",
+    "title": "Encontre entidades próximas",
+    "description": "Consulte o diretório estadual de entidades de proteção animal em Santa Catarina. Busque por cidade ou tipo de atuação.",
     "cities": [
       "Todas as cidades",
       "Florianópolis",
@@ -212,9 +212,17 @@
         "website": "www.aab.org.br"
       }
     ],
-    "ctaText": "Ver todas as ONGs cadastradas"
+    "ctaText": "Ver todas as entidades cadastradas"
   },
   "registerNGO": {
+    "entityTypes": [
+      "ONG (Organização Não-Governamental)",
+      "Associação",
+      "Instituto",
+      "Grupo de Proteção",
+      "Cooperativa",
+      "Outro"
+    ],
     "title": "Divulgue sua entidade de proteção aos animais",
     "description": "Cadastre sua organização no diretório estadual e amplie sua visibilidade para cidadãos, parceiros e voluntários em todo o estado de Santa Catarina.",
     "benefits": [
@@ -238,11 +246,12 @@
         "email": { "label": "E-mail", "placeholder": "voce@ong.org.br" },
         "phone": { "label": "Telefone / WhatsApp", "placeholder": "(00) 00000-0000" },
         "activities": { "label": "Áreas de atuação" },
-        "about": { "label": "Sobre a ONG", "placeholder": "Conte brevemente sobre a missão, anos de atuação e principais projetos." },
+        "tipo": { "label": "Tipo de entidade", "placeholder": "Selecione" },
+        "about": { "label": "Sobre a entidade", "placeholder": "Conte brevemente sobre a missão, anos de atuação e principais projetos." },
         "terms": { "label": "Concordo com os termos de uso e confirmo que os dados fornecidos são verdadeiros." }
       },
       "submit": "Enviar cadastro",
-      "note": "Seus dados são usados apenas para fins de verificação da ONG e não serão compartilhados publicamente sem consentimento."
+      "note": "Seus dados são usados apenas para fins de verificação da entidade e não serão compartilhados publicamente sem consentimento."
     }
   },
   "transparency": {
@@ -281,16 +290,16 @@
         "answer": "Nossa equipe faz a triagem em até 24 horas úteis. Após o encaminhamento, o tempo de resposta depende da disponibilidade da ONG responsável, que será notificada imediatamente."
       },
       {
-        "question": "Como as ONGs são selecionadas para o diretório?",
-        "answer": "Todas as ONGs passam por um processo de verificação que inclui validação de CNPJ, comprovação de atuação em proteção animal e análise de histórico. Buscamos garantir que apenas organizações sérias e comprometidas façam parte da plataforma."
+        "question": "Como as entidades são selecionadas para o diretório?",
+        "answer": "Todas as entidades passam por um processo de verificação que inclui validação de CNPJ, comprovação de atuação em proteção animal e análise de histórico. Buscamos garantir que apenas organizações sérias e comprometidas façam parte da plataforma."
       },
       {
-        "question": "Minha ONG pode se cadastrar?",
-        "answer": "Sim! Se sua organização atua na proteção animal em Santa Catarina, possui CNPJ ativo e cumpre os requisitos mínimos, clique em 'Cadastrar sua ONG' e preencha o formulário. A análise leva até 7 dias úteis."
+        "question": "Minha entidade pode se cadastrar?",
+        "answer": "Sim! Se sua organização atua na proteção animal em Santa Catarina, possui CNPJ ativo e cumpre os requisitos mínimos, clique em 'Cadastrar sua entidade' e preencha o formulário. A análise leva até 7 dias úteis."
       },
       {
         "question": "A plataforma cobra alguma taxa das ONGs?",
-        "answer": "Não. A plataforma é 100% gratuita para ONGs e cidadãos. Nosso objetivo é facilitar a proteção animal, não gerar receita. Eventuais custos operacionais são cobertos por doações e parcerias."
+        "answer": "Não. A plataforma é 100% gratuita para entidades e cidadãos. Nosso objetivo é facilitar a proteção animal, não gerar receita. Eventuais custos operacionais são cobertos por doações e parcerias."
       },
       {
         "question": "O que acontece após fazer uma denúncia?",
@@ -318,8 +327,8 @@
         "title": "Serviços",
         "links": [
           { "label": "Fazer denúncia", "href": "#denuncia" },
-          { "label": "Buscar ONGs", "href": "#ongs" },
-          { "label": "Cadastrar ONG", "href": "#cadastrar" }
+          { "label": "Buscar entidades", "href": "#ongs" },
+          { "label": "Cadastrar entidade", "href": "#cadastrar" }
         ]
       },
       {

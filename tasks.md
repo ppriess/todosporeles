@@ -36,8 +36,8 @@ Status: `[ ]` pendente · `[x]` concluído
 
 ## Terminologia (ONG → Entidade)
 
-- [ ] Atualizar labels visíveis em `data/home-content.json` (ONG → entidade onde couber)
-- [ ] Adicionar campo `tipo` no form de cadastro público (`register-ngo.tsx`)
+- [x] Atualizar labels visíveis em `data/home-content.json` (ONG → entidade onde couber)
+- [x] Adicionar campo `tipo` no form de cadastro público (`register-ngo.tsx`)
 
 ## Páginas inexistentes (links no footer)
 

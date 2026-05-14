@@ -22,11 +22,12 @@ import { SC_MUNICIPALITIES } from "@/lib/sc-municipalities"
 import content from "@/data/home-content.json"
 
 const { registerNGO, ngoDirectory } = content
-const { form: formCopy, benefits, title, description } = registerNGO
+const { form: formCopy, benefits, title, description, entityTypes } = registerNGO
 const activityTypes = ngoDirectory.activityTypes.filter((t) => t !== "Todos os tipos")
 
 const schema = z.object({
   ngoName: z.string().min(3, "Informe o nome da organização"),
+  tipo: z.string().min(1, "Selecione o tipo de entidade"),
   cnpj: z
     .string()
     .min(14, "Informe um CNPJ válido")
@@ -59,6 +60,7 @@ export function RegisterNGO() {
     resolver: zodResolver(schema),
     defaultValues: {
       ngoName: "",
+      tipo: "",
       cnpj: "",
       city: "",
       contactName: "",
@@ -84,6 +86,7 @@ export function RegisterNGO() {
     try {
       const { error } = await supabase.from("ngo_registrations").insert({
         ngo_name: data.ngoName,
+        tipo: data.tipo,
         cnpj: data.cnpj,
         city: data.city,
         contact_name: data.contactName,
@@ -165,6 +168,41 @@ export function RegisterNGO() {
                   />
                   {errors.ngoName && (
                     <p style={{ fontSize: '0.75rem', color: 'var(--destructive)' }} className="mt-1">{errors.ngoName.message}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--foreground)', display: 'block' }}>
+                    {formCopy.fields.tipo.label}
+                    <span style={{ color: 'var(--destructive)', marginLeft: '3px' }}>*</span>
+                  </label>
+                  <Controller
+                    name="tipo"
+                    control={control}
+                    render={({ field }) => (
+                      <Select value={field.value} onValueChange={field.onChange}>
+                        <SelectTrigger
+                          className="mt-1.5"
+                          style={{
+                            color: 'var(--foreground)',
+                            fontSize: '0.875rem',
+                            border: '1.5px solid var(--border)',
+                            borderRadius: 'var(--radius)',
+                            padding: '10px 12px',
+                          } as React.CSSProperties}
+                        >
+                          <SelectValue placeholder={formCopy.fields.tipo.placeholder} />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {entityTypes.map((t) => (
+                            <SelectItem key={t} value={t}>{t}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
+                  {errors.tipo && (
+                    <p style={{ fontSize: '0.75rem', color: 'var(--destructive)' }} className="mt-1">{errors.tipo.message}</p>
                   )}
                 </div>
 

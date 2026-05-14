@@ -38,7 +38,7 @@ export function Hero() {
 
         <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
           Uma iniciativa da ONG{" "}
-          <span className="highlight-brand">Todos Por Eles</span> que conecta cidadãos, ONGs e
+          <span className="highlight-brand">Todos Por Eles</span> que conecta cidadãos, entidades e
           autoridades para{" "}
           <span className="highlight-phrase">
             fortalecer a proteção animal em Santa Catarina
