@@ -51,7 +51,12 @@ export function OngDirectoryFull({ entidades }: { entidades: Entidade[] }) {
     return entidades.filter((e) => {
       if (city !== "Todas" && e.cidade !== city) return false
       if (tipo !== "Todos" && e.tipo !== tipo) return false
-      if (q && !e.nome.toLowerCase().includes(q) && !e.cidade.toLowerCase().includes(q)) return false
+      if (q) {
+        const matchesNome = e.nome.toLowerCase().includes(q)
+        const matchesDescricao = e.descricao.toLowerCase().includes(q)
+        const matchesAtividades = e.atividades.some(a => a.toLowerCase().includes(q))
+        if (!matchesNome && !matchesDescricao && !matchesAtividades) return false
+      }
       return true
     })
   }, [entidades, city, tipo, search])
@@ -91,50 +96,69 @@ export function OngDirectoryFull({ entidades }: { entidades: Entidade[] }) {
 
       {/* Filtros */}
       <section className="sticky top-[60px] z-30 bg-surface border-b border-border/40 px-6 lg:px-8 py-4 shadow-sm">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-3">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input
-              placeholder="Buscar por nome ou cidade…"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="pl-9 bg-surface-container border-0"
-            />
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1">
+              <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                Buscar
+              </label>
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <Input
+                  placeholder="Nome, descrição, atividades…"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="pl-9 bg-surface-container border-0"
+                />
+              </div>
+            </div>
+
+            <div className="sm:w-52">
+              <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                Cidade
+              </label>
+              <Select value={city} onValueChange={setCity}>
+                <SelectTrigger className="bg-surface-container border-0">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {cities.map((c) => (
+                    <SelectItem key={c} value={c}>{c}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="sm:w-52">
+              <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                Tipo
+              </label>
+              <Select value={tipo} onValueChange={setTipo}>
+                <SelectTrigger className="bg-surface-container border-0">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {tipos.map((t) => (
+                    <SelectItem key={t} value={t}>{TIPO_LABEL[t] ?? t}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            {hasFilters && (
+              <div className="flex items-end">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={clearFilters}
+                  className="text-muted-foreground hover:text-foreground"
+                  aria-label="Limpar filtros"
+                >
+                  <X className="w-4 h-4" />
+                </Button>
+              </div>
+            )}
           </div>
-
-          <Select value={city} onValueChange={setCity}>
-            <SelectTrigger className="sm:w-52 bg-surface-container border-0">
-              <SelectValue placeholder="Cidade" />
-            </SelectTrigger>
-            <SelectContent>
-              {cities.map((c) => (
-                <SelectItem key={c} value={c}>{c}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          <Select value={tipo} onValueChange={setTipo}>
-            <SelectTrigger className="sm:w-52 bg-surface-container border-0">
-              <SelectValue placeholder="Tipo de entidade" />
-            </SelectTrigger>
-            <SelectContent>
-              {tipos.map((t) => (
-                <SelectItem key={t} value={t}>{TIPO_LABEL[t] ?? t}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          {hasFilters && (
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={clearFilters}
-              className="shrink-0 text-muted-foreground hover:text-foreground"
-              aria-label="Limpar filtros"
-            >
-              <X className="w-4 h-4" />
-            </Button>
-          )}
         </div>
       </section>
 
