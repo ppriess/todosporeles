@@ -85,6 +85,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 ⚠️ **CRITICAL:** This setting is easy to forget or mess up. If you see `ELIFECYCLE Command failed` or warnings about "turbopack.root should be absolute" during Render deployment, the config is wrong. Always verify `turbopack.root` is set using `__dirname` (absolute path), never relative paths or hardcoded values.
 
+### Build-Time Environment Variables
+
+- **Never instantiate external services at module level** if they require environment variables (e.g., Resend, third-party APIs). Example: `const resend = new Resend(process.env.RESEND_API_KEY)` at the top level will fail during `next build` because `process.env` is not populated during build time.
+- **Move instantiation into request handlers** or use lazy initialization. This ensures the service is only initialized at runtime when environment variables are available.
+- **Render does not pass env vars during build.** Make sure your code gracefully handles missing env vars during the build phase, or move the dependent code into runtime-only paths (API routes, server actions).
+
 ## Gestão de tarefas
 
 Ao identificar qualquer pendência, bug, gap de integração ou melhoria durante o trabalho, registre imediatamente em `tasks.md` antes de continuar. Não deixe tarefas apenas no contexto da conversa.
