@@ -12,11 +12,21 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+
+  if (!supabaseUrl || !supabaseKey) {
+    console.error("Missing Supabase environment variables")
+    const loginUrl = request.nextUrl.clone()
+    loginUrl.pathname = "/admin/login"
+    return NextResponse.redirect(loginUrl)
+  }
+
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
+    supabaseUrl,
+    supabaseKey,
     {
       cookies: {
         getAll() { return request.cookies.getAll() },
@@ -31,9 +41,16 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  const { data: { user } } = await supabase.auth.getUser()
+  try {
+    const { data: { user } } = await supabase.auth.getUser()
 
-  if (!user) {
+    if (!user) {
+      const loginUrl = request.nextUrl.clone()
+      loginUrl.pathname = "/admin/login"
+      return NextResponse.redirect(loginUrl)
+    }
+  } catch (error) {
+    console.error("Supabase auth check failed:", error)
     const loginUrl = request.nextUrl.clone()
     loginUrl.pathname = "/admin/login"
     return NextResponse.redirect(loginUrl)
