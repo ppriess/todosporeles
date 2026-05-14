@@ -3,9 +3,8 @@ import { Resend } from "resend"
 import { cookies } from "next/headers"
 import { createClient } from "@/supabase/utils/supabase/server"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(req: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
   const cookieStore = await cookies()
   const supabase = createClient(cookieStore)
 
