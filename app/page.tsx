@@ -21,23 +21,30 @@ export default async function Home() {
   const rawCity = headersList.get("x-vercel-ip-city")
   const userCity = rawCity ? decodeURIComponent(rawCity) : null
 
-  const { data: all } = await supabase
-    .from("entidades")
-    .select("id, nome, cidade, atividades, descricao, tipo, verificada, website, telefone")
-    .eq("ativa", true)
-    .order("nome", { ascending: true })
+  let featured = []
 
-  const sorted = [...(all ?? [])].sort((a, b) => {
-    if (userCity) {
-      const aMatch = a.cidade === userCity
-      const bMatch = b.cidade === userCity
-      if (aMatch && !bMatch) return -1
-      if (bMatch && !aMatch) return 1
-    }
-    return 0
-  })
+  try {
+    const { data: all } = await supabase
+      .from("entidades")
+      .select("id, nome, cidade, atividades, descricao, tipo, verificada, website, telefone")
+      .eq("ativa", true)
+      .order("nome", { ascending: true })
 
-  const featured = sorted.slice(0, 3)
+    const sorted = [...(all ?? [])].sort((a, b) => {
+      if (userCity) {
+        const aMatch = a.cidade === userCity
+        const bMatch = b.cidade === userCity
+        if (aMatch && !bMatch) return -1
+        if (bMatch && !aMatch) return 1
+      }
+      return 0
+    })
+
+    featured = sorted.slice(0, 3)
+  } catch (error) {
+    console.error("Failed to fetch entities:", error)
+    // Continue with empty featured list if database is unavailable
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
